@@ -1,0 +1,9 @@
+name: scaffold
+version: 0.1.0
+usage: scaffold
+description: Scaffold resources for charts based on predefined templates
+ignoreFlags: false
+command: ${HELM_PLUGIN_DIR}/bin/helm-scaffold
+hooks:
+  install: task -d ${HELM_PLUGIN_DIR} build
+  update: task -d ${HELM_PLUGIN_DIR} build

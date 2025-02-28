@@ -26,3 +26,8 @@ go.work.sum
 
 # pre-commit / CI caching output
 .cache
+
+# build output
+bin/
+
+config.yaml
